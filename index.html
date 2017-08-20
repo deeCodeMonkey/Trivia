@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Trivia Game</title>
+    <!-- Added link to the jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</head>
+<body>
+
+    <form action="ResultsPage.html" method="get" id="formID">
+        <div class="container text-center">
+            <div class ="row">
+                <h1>The Trivia Game</h1>
+                <h5>Seconds Remaining</h5>
+                <div id="timer"></div>
+            </div> 
+            
+            <div class="row">
+                <h4>What day is Independence Day?</h4>
+                <label class="radio-inline">
+                    <input type="radio" name="question1" value="wrong"> September 11<br>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="question1" value="wrong"> January 1<br>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="question1" value="right"> July 4<br>
+                </label>
+            </div>
+
+
+            <div class="row">
+                <h4>What day is Valentines Day?</h4>
+                <label class="radio-inline">
+                    <input type="radio" name="question2" value="right"> February 14<br>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="question2" value="wrong"> December 24<br>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="question2" value="wrong"> December 25<br>
+                </label>
+            </div>
+
+
+            <div class="row">
+                <h4>What day is my Birthday?</h4>
+                <label class="radio-inline">
+                    <input type="radio" name="question3" value="wrong"> August 17<br>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="question3" value="right"> September 17<br>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="question3" value="wrong"> March 17<br>
+                </label>
+            </div>
+
+
+            <button id="submitButtton">Submit</button>
+            
+        </div>
+    </form>
+
+</body>
+</html>
